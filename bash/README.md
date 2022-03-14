@@ -60,11 +60,12 @@ EndOfText
 ```
 
 Symbol | Function
-:---: | ---
+--- | ---
 > | Output redirection (truncate)
 >> | Output redirection (append)
 < | Input redirection
-<<| Here document
+<< | Here document
+
 ## Built-in Commands
 - Bash includes built-in commands (Part of bash itself).
 - Some bash built-in commands have the same name as other commands.
