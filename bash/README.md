@@ -61,10 +61,10 @@ EndOfText
 
 Symbol | Function
 :---: | ---
->|Output redirection (truncate)
->>|Output redirection (append)
-<|Input redirection
-<<|Here document
+> | Output redirection (truncate)
+>> | Output redirection (append)
+< | Input redirection
+<<| Here document
 ## Built-in Commands
 - Bash includes built-in commands (Part of bash itself).
 - Some bash built-in commands have the same name as other commands.
@@ -93,12 +93,77 @@ Character |Description
 {}|Braches/Curly Braces 
 []|Brackets/Square Brackets
 ## Expansion and substitutions
-Representation | Name
---- | ---
-~ | Brace expansion 
-### Bash Expansions
-### Bash Substitutions
+Representation | Name  
+--- | --- 
+~ | Tilde expansion 
+{...} | Brace expansion  
+${...} | Parameter expansion
+$(...) | Command substitution
+$((...)) | Arithmetic expansion
+ 
+- Represents the user's $HOME environment variable.
+To echo tilde 
+```bash
+echo ~
+``` 
+add minus on tilde
+```bash
+echo ~-
+```
 ### Brace Expansions
+- Brace expansion creates sets or ranges. 
+{a,b,c} {x..y..i}
+To create sequentials number and letter
+```bash
+echo {1..10}
+echo {10..1}
+echo {a...z}
+echo {a..z..2}
+```
+To combine brace expansion
+```bash
+echo test_{10..12}{a..d}
+echo {a..b}_{1..4}
+```
 ### Parameter Expansions
+- Parameter expansion retrieves and transforms stored values.
+${...}
+To assign parameter
+```bash
+greeting="hello"
+echo $greeting
+```
+Parameter with position
+```bash
+echo ${greeting:2:1}
+
+```
+To see manual bash
+```bash
+man bash
+```
+Parameter replace
+```bash
+echo ${greeting/ll/rr}
+echo ${greeting//l/_}
+```
+Add paremeter
+```bash
+echo $greeting:4:3
+```
 ### Command Substitution
+- Command substitution put the output of one command inside another.
+$(...) older representation `...`
+sample
+```bash
+echo "$(python3 --version | tr [a-z] [A-z])"
+```
 ### Arithmetic Expansion
+- Arithmetic expansion does math.
+$((...) older representation $[...]
+```bash
+echo $(( 10 + 2 ))
+echo $(( 10 - 2 ))
+echo $(( 10 * 2 ))
+echo $(( 10 / 2 ))
+```
