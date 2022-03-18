@@ -90,9 +90,9 @@ enable echo
 - Bash uses these characters differently that other languages.
 Character |Description
 --- | ---
-()|Parentheses/Circle Brackets 
-{}|Braches/Curly Braces 
-[]|Brackets/Square Brackets
+() | Parentheses/Circle Brackets 
+{} | Braches/Curly Braces 
+[] | Brackets/Square Brackets
 ## Expansion and substitutions
 Representation | Name  
 --- | --- 
