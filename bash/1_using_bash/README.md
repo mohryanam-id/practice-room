@@ -1,14 +1,30 @@
 # Bash
 ## What's bash ?
-- Bash is a widely used shell, available in many platforms.
-- Short for Bourne Again Shell, in reference to the earlier Bourne Shell.
-- An Interactive command-line shell that also allows commands to be combined into scripts files, which can be run like programs.
-- Combining commands into scripts saves time and reduce errors.
-- Bash is preinstalled on most Linux systems.
-- Bash is primaly used on Linux systems.
-- Use Linux system, virtual machine, or cloud instance to learn Bash.
-- The version of Bash on macOS is highly outdated. It needs to be updated.
-- To run bash on Windows, use Git Bash or WSL (or a linux VM)
+- Bash is a widely used shell, available in 
+many platforms. 
+
+- Short for Bourne Again Shell, in reference 
+to the earlier Bourne Shell. 
+
+- An Interactive command-line shell that also 
+allows commands to be combined into scripts 
+files, which can be run like programs.
+
+- Combining commands into scripts saves time 
+and reduce errors.
+
+- Bash is preinstalled on most Linux systems. 
+
+- Bash is primaly used on Linux systems. 
+
+- Use Linux system, virtual machine, or cloud 
+instance to learn Bash. 
+
+- The version of Bash on macOS is highly 
+outdated. It needs to be updated.
+
+- To run bash on Windows, use Git Bash or WSL 
+(or a linux VM)
 
 To check bash version in command line:
 ```bash
